@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Birthday Surprise 🎂
 
-## Getting Started
+A mobile-first, step-by-step interactive birthday experience built with Next.js, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customize
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| What | File |
+|------|------|
+| Password, messages, quotes | `src/data/content.ts` |
+| Memory images | Replace files in `public/memories/` or update `MEMORIES` in content.ts |
+| Background music | Add `public/music/soft-instrumental.mp3` |
 
-## Learn More
+**Password:** `favourite`
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy to Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Push to GitHub and import the repo in [Vercel](https://vercel.com).
 
-## Deploy on Vercel
+## Flow (10 steps)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Password → 2. Identity → 3. Gift → 4. Intro → 5. Memory slides → 6. Fun quiz → 7. Chat + timeline → 8. Secret button → 9. Final message → 10. Ending + replay
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+No page scrolling — one full-screen step at a time.
