@@ -12,6 +12,12 @@ export function RandomPopups({ active }: RandomPopupsProps) {
   const [message, setMessage] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!active) {
+      setMessage(null);
+    }
+  }, [active]);
+
+  useEffect(() => {
     if (!active) return;
 
     const showRandom = () => {

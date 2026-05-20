@@ -76,7 +76,7 @@ export function VideoStep({ onContinue, onInteract }: VideoStepProps) {
         </div>
 
         <p className="mt-3 text-sm font-medium text-purple-900/90">
-          (The final song plays in this section. Turn volume up a little.)
+          (Agar Song ki voice jyda ho toh usko rok ke video dekh lena..)
         </p>
       </GlassCard>
 

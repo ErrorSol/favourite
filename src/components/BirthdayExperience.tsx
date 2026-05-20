@@ -37,7 +37,9 @@ export function BirthdayExperience() {
     <main className="relative h-[100dvh] w-full overflow-hidden bg-gradient-to-br from-fuchsia-300 via-pink-200 to-rose-100">
       <FloatingElements />
       <BackgroundMusic enabled={hasInteracted} useLastTrack={isVideoStep} />
-      <RandomPopups active={hasInteracted && currentStep > 1} />
+      <RandomPopups
+        active={hasInteracted && currentStep > 1 && currentStep !== 5}
+      />
       <CatParade active={hasInteracted && currentStep >= 3} />
       <div className="pointer-events-none absolute inset-0 z-[1] bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.45),transparent_45%),radial-gradient(circle_at_80%_60%,rgba(255,105,180,0.22),transparent_55%)]" />
 

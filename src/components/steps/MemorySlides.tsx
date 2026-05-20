@@ -10,7 +10,7 @@ type MemorySlidesProps = {
   onInteract: () => void;
 };
 
-const AUTO_MS = 3500;
+const AUTO_MS = 8500; // 8.5s per slide (auto-advance)
 const TOTAL = MEMORIES.length;
 
 export function MemorySlides({ onComplete, onInteract }: MemorySlidesProps) {
